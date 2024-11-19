@@ -3,14 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@egjs/hammerjs": "^2.0.17",
-    "component-emitter": "^2.0.0",
-    "keycharm": "^0.4.0",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "timsort": "^0.3.0",
-    "uuid": "10.0.0",
     "vis-data": "^7.1.9",
     "vis-network": "^9.1.9",
     "vis-util": "^5.0.7"
@@ -23,5 +19,17 @@
   },
   "devDependencies": {
     "react-scripts": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
