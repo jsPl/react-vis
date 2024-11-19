@@ -76,7 +76,7 @@ export const handleEdgeSave = (edge, networkData, callback) => {
       !confirm('Do you want to connect the node to itself?')
     ) {
       callback(null);
-      return networkData; // !
+      return networkData; // fix: cancelling adding new edge would still create it without this return statement
     } else {
       callback(edge);
     }

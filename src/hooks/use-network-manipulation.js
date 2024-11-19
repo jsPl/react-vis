@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import {
   handleNodeSave,
@@ -79,9 +79,9 @@ export const useNetworkManipulation = (
     [edgeEditMode]
   );
 
-  const cancelNodeSelection = useMemo(() => setSelectedNode(null), []);
+  const cancelNodeSelection = useCallback(() => setSelectedNode(null), []);
 
-  const cancelEdgeSelection = useMemo(() => setSelectedEdge(null), []);
+  const cancelEdgeSelection = useCallback(() => setSelectedEdge(null), []);
 
   return {
     manipulation,
